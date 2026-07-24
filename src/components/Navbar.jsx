@@ -37,13 +37,15 @@ export default function Navbar() {
               : 'bg-cream-50/80 backdrop-blur-md border border-cream-200'
           }`}
         >
-          {/* Logo */}
+          {/* Logo with Dark Contrast Backing for High Contrast Legibility */}
           <a href="#home" className="flex items-center gap-2 sm:gap-3 group shrink-0">
-            <img
-              src="/logo.png"
-              alt="Nishma's Delights"
-              className="h-8 sm:h-11 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
-            />
+            <div className="bg-espresso-950 px-2.5 py-1.5 rounded-2xl border border-espresso-800 shadow-md transition-all duration-300 group-hover:scale-105 group-hover:border-caramel-500">
+              <img
+                src="/logo.png"
+                alt="Nishma's Delights"
+                className="h-7 sm:h-9 w-auto object-contain"
+              />
+            </div>
             <div className="flex flex-col">
               <span className="font-serif font-bold text-base sm:text-lg leading-none text-espresso-900 tracking-wide">
                 Nishma's

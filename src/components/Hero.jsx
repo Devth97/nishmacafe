@@ -139,7 +139,7 @@ export default function Hero() {
             href="#darbe-cafe"
             className="group glass-panel rounded-3xl p-5 sm:p-6 text-left transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl border-2 border-matcha-200 flex items-center gap-4 sm:gap-5"
           >
-            <div className="h-14 w-14 sm:h-16 sm:w-16 shrink-0 rounded-2xl bg-matcha-100 p-2 sm:p-2.5 border border-matcha-200 flex items-center justify-center overflow-hidden">
+            <div className="h-14 w-14 sm:h-16 sm:w-16 shrink-0 rounded-2xl bg-espresso-950 p-2 sm:p-2.5 border border-espresso-800 flex items-center justify-center overflow-hidden shadow-md">
               <img
                 src="/images/logo-cafe-v2.png"
                 alt="Nishma's Delights Café"
@@ -163,7 +163,7 @@ export default function Hero() {
             href="#darbe-express"
             className="group glass-panel rounded-3xl p-5 sm:p-6 text-left transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl border-2 border-caramel-300 flex items-center gap-4 sm:gap-5"
           >
-            <div className="h-14 w-14 sm:h-16 sm:w-16 shrink-0 rounded-2xl bg-cream-200 p-2 sm:p-2.5 border border-cream-300 flex items-center justify-center overflow-hidden">
+            <div className="h-14 w-14 sm:h-16 sm:w-16 shrink-0 rounded-2xl bg-espresso-950 p-2 sm:p-2.5 border border-espresso-800 flex items-center justify-center overflow-hidden shadow-md">
               <img
                 src="/images/logo-express-v2.png"
                 alt="Nishma's Delight Express"
@@ -187,7 +187,7 @@ export default function Hero() {
             href="#sullia-cafe"
             className="group glass-panel rounded-3xl p-5 sm:p-6 text-left transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl border-2 border-matcha-200 flex items-center gap-4 sm:gap-5"
           >
-            <div className="h-14 w-14 sm:h-16 sm:w-16 shrink-0 rounded-2xl bg-matcha-50 p-2 sm:p-2.5 border border-matcha-200 flex items-center justify-center overflow-hidden">
+            <div className="h-14 w-14 sm:h-16 sm:w-16 shrink-0 rounded-2xl bg-espresso-950 p-2 sm:p-2.5 border border-espresso-800 flex items-center justify-center overflow-hidden shadow-md">
               <img
                 src="/logo.png"
                 alt="Sullia Delights Café"

@@ -37,7 +37,7 @@ export default function OutletsSection() {
       badge: 'Sullia Branch',
       badgeColor: 'bg-matcha-900 text-cream-50',
       icon: IceCream,
-      image: '/images/signature.jpeg',
+      image: '/images/sullia-cafe.jpeg',
       description: 'Bringing the iconic Nishma ice creams, specialty coffees & warm hospitality to our valued guests in Sullia.',
       address: 'HP Petrol Pump, MK Residency, Gandhinagara, Sullia, Karnataka 574239',
       timing: '11:00 AM – 11:30 PM (Daily)',

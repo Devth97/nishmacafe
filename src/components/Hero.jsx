@@ -1,7 +1,6 @@
 import React from 'react';
 import { Sparkles, MapPin, Coffee, ArrowRight, Star, Heart, Award, ChevronDown, CheckCircle2 } from 'lucide-react';
 import { DoodleCoffeeMug, DoodleIceCream, DoodleSparkle, DoodleSquiggle } from './CafeDoodles';
-import InteractiveCafeBar from './InteractiveCafeBar';
 
 export default function Hero() {
   return (
@@ -133,11 +132,8 @@ export default function Hero() {
 
         </div>
 
-        {/* Interactive Cafe Vibe Lab Component */}
-        <InteractiveCafeBar />
-
         {/* Outlet Quick Selector Cards */}
-        <div id="outlets-quick" className="mt-14 sm:mt-20 pt-4 sm:pt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6">
+        <div id="outlets-quick" className="mt-10 sm:mt-16 pt-2 sm:pt-4 grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6">
           
           <a
             href="#darbe-cafe"

@@ -150,17 +150,17 @@ export default function AmbienceGallery() {
 
       </div>
 
-      {/* Lightbox Modal */}
+      {/* Lightbox Modal: High z-index with top padding & prominent close button */}
       {activeImage && (
         <div
           onClick={() => setActiveImage(null)}
-          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-espresso-950/80 backdrop-blur-md cursor-pointer"
+          className="fixed inset-0 z-[100] flex items-center justify-center p-4 pt-20 sm:pt-24 bg-espresso-950/80 backdrop-blur-md cursor-pointer"
         >
-          <div className="relative max-w-4xl w-full rounded-2xl overflow-hidden bg-cream-50 shadow-2xl">
+          <div className="relative max-w-4xl w-full rounded-2xl overflow-hidden bg-cream-50 shadow-2xl my-auto">
             <img
               src={activeImage.src}
               alt={activeImage.title}
-              className="w-full max-h-[80vh] object-contain bg-espresso-950"
+              className="w-full max-h-[75vh] object-contain bg-espresso-950"
             />
             <div className="p-4 bg-cream-50">
               <h3 className="font-serif text-lg font-bold text-espresso-900">{activeImage.title}</h3>
@@ -168,9 +168,10 @@ export default function AmbienceGallery() {
             </div>
             <button
               onClick={() => setActiveImage(null)}
-              className="absolute top-3 right-3 rounded-full bg-cream-50/90 p-1.5 text-espresso-900 hover:bg-cream-200"
+              className="absolute top-3 right-3 rounded-full bg-espresso-950 text-cream-50 p-2 shadow-xl border border-espresso-800 hover:bg-caramel-500 transition-colors z-20"
+              aria-label="Close Lightbox"
             >
-              <X className="h-4 w-4" />
+              <X className="h-5 w-5 text-cream-50" />
             </button>
           </div>
         </div>

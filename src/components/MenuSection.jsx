@@ -266,21 +266,30 @@ export default function MenuSection() {
 
       </div>
 
-      {/* Item Detail Modal */}
+      {/* Item Detail Modal: Rendered with z-[100] above fixed Navbar header with top padding & prominent close button */}
       {selectedItem && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-espresso-950/70 backdrop-blur-md">
-          <div className="bg-cream-50 rounded-2xl sm:rounded-[2.5rem] max-w-lg w-full overflow-hidden shadow-2xl border border-matcha-300">
-            <div className="relative aspect-[16/9]">
+        <div
+          onClick={() => setSelectedItem(null)}
+          className="fixed inset-0 z-[100] flex items-center justify-center p-4 sm:p-6 pt-20 sm:pt-24 pb-8 bg-espresso-950/80 backdrop-blur-md overflow-y-auto"
+        >
+          <div
+            onClick={(e) => e.stopPropagation()}
+            className="bg-cream-50 rounded-3xl max-w-lg w-full overflow-hidden shadow-2xl border-2 border-matcha-300 my-auto relative animate-fade-in"
+          >
+            <div className="relative aspect-[16/9] bg-espresso-950">
               <img
                 src={selectedItem.image}
                 alt={selectedItem.name}
                 className="h-full w-full object-cover"
               />
+              
+              {/* Prominent High-Contrast Close Button */}
               <button
                 onClick={() => setSelectedItem(null)}
-                className="absolute top-3 right-3 rounded-full bg-cream-50/90 p-2 text-espresso-900 hover:bg-cream-200"
+                className="absolute top-3 right-3 z-30 rounded-full bg-espresso-950/90 text-cream-50 p-2.5 shadow-2xl border-2 border-cream-50/40 hover:bg-caramel-500 hover:scale-110 transition-all flex items-center justify-center"
+                aria-label="Close detail modal"
               >
-                <X className="h-4 w-4" />
+                <X className="h-5 w-5 text-cream-50" />
               </button>
             </div>
             
@@ -316,7 +325,7 @@ export default function MenuSection() {
                   href="https://www.zomato.com/puttur/nishmas-delights-cafe-puttur-locality/order"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-full bg-matcha-700 px-5 py-2.5 text-xs font-bold text-cream-50 hover:bg-matcha-900 transition-colors"
+                  className="inline-flex items-center gap-2 rounded-full bg-matcha-700 px-5 py-2.5 text-xs font-bold text-cream-50 hover:bg-matcha-900 transition-colors shadow-md"
                 >
                   <Utensils className="h-3.5 w-3.5 text-caramel-400" />
                   <span>Order Item</span>
